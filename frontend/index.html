@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Cardiovascular Risk Predictor</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>❤️ AI Cardiovascular Risk Predictor</h1>
+
+    <div class="grid">
+
+        <!-- LEFT COLUMN -->
+        <div class="col">
+
+            <label>Age</label>
+            <input id="age" type="number">
+
+            <label>Gender</label>
+            <select id="sex">
+                <option value="1">Male</option>
+                <option value="0">Female</option>
+            </select>
+
+            <label>Chest Pain Type</label>
+            <select id="cp">
+                <option value="0">Typical</option>
+                <option value="1">Non-anginal</option>
+                <option value="2">Asymptomatic</option>
+            </select>
+
+            <label>Resting Blood Pressure</label>
+            <input id="trestbps" type="number">
+
+            <label>Cholesterol</label>
+            <input id="chol" type="number">
+
+            <label>Fasting Blood Sugar</label>
+            <select id="fbs">
+                <option value="1">&gt;120</option>
+                <option value="0">&lt;120</option>
+            </select>
+
+            <!-- ✅ FIXED -->
+            <label>Resting ECG</label>
+            <select id="restecg">
+                <option value="0">Normal</option>
+                <option value="1">ST-T abnormality</option>
+                <option value="2">Hypertrophy</option>
+            </select>
+
+        </div>
+
+        <!-- RIGHT COLUMN -->
+        <div class="col">
+
+            <label>Max Heart Rate</label>
+            <input id="thalach" type="number">
+
+            <label>Exercise Induced Angina</label>
+            <select id="exang">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+
+            <label>Oldpeak</label>
+            <input id="oldpeak" type="number" step="0.1">
+
+            <label>Slope</label>
+            <select id="slope">
+                <option value="0">Up</option>
+                <option value="1">Flat</option>
+                <option value="2">Down</option>
+            </select>
+
+            <label>CA</label>
+            <input id="ca" type="number">
+
+            <label>Thal</label>
+            <select id="thal">
+                <option value="1">Normal</option>
+                <option value="2">Fixed Defect</option>
+                <option value="3">Reversible</option>
+            </select>
+
+        </div>
+
+    </div>
+
+    <!-- EXTRA -->
+    <div class="extra">
+
+        <div>
+            <label>Weight (kg)</label>
+            <input id="weight" type="number">
+        </div>
+
+        <div>
+            <label>Height (cm)</label>
+            <input id="height" type="number">
+        </div>
+
+        <div>
+            <label>Diet Preference</label>
+            <select id="diet">
+                <option>Veg</option>
+                <option>Non-Veg</option>
+            </select>
+        </div>
+
+    </div>
+
+    <button id="predictBtn">Predict Risk</button>
+
+    <h2 id="result">Your Risk: --</h2>
+
+    <div class="buttons">
+        <button id="dietBtn">Diet</button>
+        <button id="workoutBtn">Workout</button>
+        <button id="reportBtn">Report</button>
+    </div>
+
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
